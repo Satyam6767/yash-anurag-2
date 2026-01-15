@@ -1,0 +1,183 @@
+front end  => html, css, bootstrap, javascript, react
+
+backend => node, express, mongodb
+
+integrate=> 
+
+
+MERN =>
+
+mongodb => it is database , store data in formate similar to json
+
+express => 
+
+node => it powers the back end of our application, it lets run js on the server,
+        
+
+                                        v8 chrome engine 
+        human readable js code      -------------------> machine readable
+
+
+
+npm=>  npm is like  a big database, there are variety of libraries and packaegs
+
+
+how to start backend project =>
+npm init  => some questions
+npm init -y => directly installed
+
+
+core modules of node js =>
+
+1. fs => it is a nodejs core module, used to handle ffile system 
+            opeartion such as reading, creating, delete
+
+2. Os =>  
+3. http => it is node.js core module that help in creating web server,and 
+            handle http, requests and responses.
+
+            limitation of http core modules
+                         => routing complex
+                         => code lengthy
+                         => middleware not supperted 
+
+
+
+
+
+
+
+SERVER => A server is a person that communicate with client
+        A server is a computer program that responsible for preparing and delivering
+         data to the other computer
+
+
+
+
+client/UI => 
+waiter------> server
+chef------> databases
+MENU ------> API 
+single item of that menu------->            Endpoint
+
+
+
+
+           req-get/post/put
+client  ----------------------> server----------------> databse(mongodb)
+`           <----------------res(json)  
+
+
+
+Main concept of database =>
+c => create/insert/add =>  
+r => read /fetch / retrieve
+u => update
+d => delet
+
+
+
+
+two types of databases =>
+        1. sql => data is stored in table form-> table is made of rows and columns
+        2. no-sql => data is stored in collection--> a collection is made up Document
+
+
+
+        sql                 mongodb 
+        table            collections
+        Row /Record      Document
+        column           field
+
+        download =>     1. mongodb server
+                        2. mongodb shell
+                        3. MONGODB compass
+
+
+ how to connect node.js application and mongodb database
+ node application => javascript 
+                                        => mongodb driver
+ mongodb  => own language
+
+ mongodb driver =>  it is essential because it acts like a bridge node
+                         and mongodb
+
+                the driver translate js code from node js into formate
+                 that mongodb understand 
+
+
+
+mongoose => npm i mongoose
+
+
+
+middleware=>
+        1. Middleware sits between req and response
+        2. it is basically a function that have access to req and res 
+           object in an express , along with next ()
+
+        use =>
+        1. processing request
+        2. Routing 
+        3. error handling
+        4. performing action before response 
+
+
+Authentication   =>
+        in node.js Authenticationn is the process of of verifying the identity of a user
+        trying to access a system or resources.
+
+        commonly this involves checking a user's credentials, such as a username password
+        to allow or deny access.
+
+
+
+Authorization =>  Authorization in node.js  means deciding  what an authenticated user is allowed to do in a 
+                 application.
+
+
+                 user logged (Authentication) 
+
+                 now system check => (RBAC) => role based access control
+                        can this user view data 
+                        can this user edit/add/update
+
+
+
+
+data => 
+1. buyer => buyername, email, number, product1, product2
+2. seller => sellername, sellerId, product1, product2 , monthlyincome
+3. product => productname, price, reating , image
+
+
+
+
+
+node js application 
+
+
+mongodb database => 
+
+
+
+
+
+
+mongoose Schema : define how your data should look like, with fields
+                like firstname, lastname, contact, role
+
+model  => it is created using the schema and now be used to interact 
+        with the  database
+
+
+
+
+sending data from postman (post method)
+
+
+body-parser is a middleware in express.js
+it is used to parse and extract the data in the body of incoming
+         http request (like Post)
+it takes data from the body of requesst and convert it 
+        into formate (like json) that we can use in our code
